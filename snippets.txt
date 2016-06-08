@@ -1,0 +1,8 @@
+// by Tiago Mesquita
+
+// use to escape html pages in javascript
+var templatetop = (function () {/*
+       <div id="teste">
+        <p>content</p>
+       </div>
+*/}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1];
